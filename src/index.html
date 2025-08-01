@@ -1,0 +1,2116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-[#FFFFFF]">
+    <!-- Navbar -->
+
+    <header class="sticky top-0 z-50">
+      <nav
+        class="bg-[#FFFFFF] h-[64px] border-b-[1px] border-gray-100 px-6 py-3 flex justify-between items-center lg:px-8"
+      >
+        <!-- This div for logo and buttons -->
+
+        <div class="lg:flex lg:gap-x-9">
+          <!-- logo -->
+          <img src="../logo.png" alt="logo" />
+
+          <!-- This div only in lg xl 2xl -->
+          <!-- buttons Free Guides and Best Tools -->
+
+          <div class="hidden lg:flex lg:gap-x-8">
+            <button
+              class="lg:flex lg:items-center lg:gap-x-1 lg:font-medium lg:text-sm xl:font-bold lg:hover:text-[#7243E6] lg:hover:underline transition-colors duration-300"
+            >
+              Best Tools
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 256 256"
+                aria-hidden="true"
+                class="ml-1 cz-color-5325111 cz-color-15460325"
+              >
+                <path
+                  d="M216.49,104.49l-80,80a12,12,0,0,1-17,0l-80-80a12,12,0,0,1,17-17L128,159l71.51-71.52a12,12,0,0,1,17,17Z"
+                  class="cz-color-5325111 cz-color-15460325"
+                ></path>
+              </svg>
+            </button>
+
+            <button
+              class="lg:flex lg:items-center lg:gap-x-1 lg:font-medium lg:text-sm xl:font-bold lg:hover:text-[#7243E6] lg:hover:underline"
+            >
+              Free Guides
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 256 256"
+                aria-hidden="true"
+                class="ml-1 cz-color-5325111 cz-color-15460325"
+              >
+                <path
+                  d="M216.49,104.49l-80,80a12,12,0,0,1-17,0l-80-80a12,12,0,0,1,17-17L128,159l71.51-71.52a12,12,0,0,1,17,17Z"
+                  class="cz-color-5325111 cz-color-15460325"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- This div only shown in lg,xl,2xl This div have buttons(Tools,Stacks,Interation)-->
+
+        <div class="hidden lg:flex">
+          <button
+            class="lg:flex lg:items-center lg:bg-[#7243E6] lg:text-white lg:px-9 lg:py-[10px] lg:font-semibold lg:border-[1px] lg:border-none lg:rounded-tl-md lg:rounded-bl-md lg:text-sm xl:font-bold"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              fill="currentColor"
+              viewBox="0 0 256 256"
+              class="mr-2 w-4 h-4 transition-all duration-150 text-[--btn-icon-color] cz-color-16777215 cz-color-15460325"
+            >
+              <path
+                d="M232,96a72,72,0,0,1-100.94,66L79,222.22c-.12.14-.26.29-.39.42a32,32,0,0,1-45.26-45.26c.14-.13.28-.27.43-.39L94,124.94a72.07,72.07,0,0,1,83.54-98.78,8,8,0,0,1,3.93,13.19L144,80l5.66,26.35L176,112l40.65-37.52a8,8,0,0,1,13.19,3.93A72.6,72.6,0,0,1,232,96Z"
+                class="cz-color-16777215 cz-color-15460325"
+              ></path>
+            </svg>
+            Tools
+          </button>
+
+          <button
+            class="lg:flex lg:items-center lg:text-black lg:px-9 lg:py-[10px] lg:font-semibold lg:border-y-[1px] lg:border-slate-300 lg:text-sm xl:font-bold lg:hover:bg-slate-50"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              fill="currentColor"
+              viewBox="0 0 256 256"
+              class="mr-2 w-4 h-4 transition-all duration-150 text-[--btn-icon-color] cz-color-8024433 cz-color-15460325"
+            >
+              <path
+                d="M12,111l112,64a8,8,0,0,0,7.94,0l112-64a8,8,0,0,0,0-13.9l-112-64a8,8,0,0,0-7.94,0l-112,64A8,8,0,0,0,12,111ZM128,49.21,223.87,104,128,158.79,32.13,104ZM246.94,140A8,8,0,0,1,244,151L132,215a8,8,0,0,1-7.94,0L12,151A8,8,0,0,1,20,137.05l108,61.74,108-61.74A8,8,0,0,1,246.94,140Z"
+                class="cz-color-8024433 cz-color-15460325"
+              ></path>
+            </svg>
+            Stacks
+          </button>
+
+          <button
+            class="lg:flex lg:items-center lg:text-black lg:px-5 lg:py-[10px] lg:font-semibold lg:border-[1px] lg:border-slate-300 lg:rounded-tr-md lg:rounded-br-md lg:text-sm xl:font-bold lg:hover:bg-slate-50"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              fill="currentColor"
+              viewBox="0 0 256 256"
+              class="mr-2 w-4 h-4 transition-all duration-150 text-[--btn-icon-color] cz-color-8024433 cz-color-15460325"
+            >
+              <path
+                d="M149.66,138.34a8,8,0,0,0-11.32,0L120,156.69,99.31,136l18.35-18.34a8,8,0,0,0-11.32-11.32L88,124.69,69.66,106.34a8,8,0,0,0-11.32,11.32L64.69,124,41.37,147.31a32,32,0,0,0,0,45.26l5.38,5.37-28.41,28.4a8,8,0,0,0,11.32,11.32l28.4-28.41,5.37,5.38a32,32,0,0,0,45.26,0L132,191.31l6.34,6.35a8,8,0,0,0,11.32-11.32L131.31,168l18.35-18.34A8,8,0,0,0,149.66,138.34Zm-52.29,65a16,16,0,0,1-22.62,0L52.69,181.25a16,16,0,0,1,0-22.62L76,135.31,120.69,180Zm140.29-185a8,8,0,0,0-11.32,0l-28.4,28.41-5.37-5.38a32.05,32.05,0,0,0-45.26,0L124,64.69l-6.34-6.35a8,8,0,0,0-11.32,11.32l80,80a8,8,0,0,0,11.32-11.32L191.31,132l23.32-23.31a32,32,0,0,0,0-45.26l-5.38-5.37,28.41-28.4A8,8,0,0,0,237.66,18.34Zm-34.35,79L180,120.69,135.31,76l23.32-23.31a16,16,0,0,1,22.62,0l22.06,22A16,16,0,0,1,203.31,97.37Z"
+                class="cz-color-8024433 cz-color-15460325"
+              ></path>
+            </svg>
+            Integrations
+          </button>
+        </div>
+
+        <!-- This div have buttons (become a vendor only show in lg,xl,2xl) & (signup show in all screens) & (menu button only show in sm,md) -->
+
+        <div class="flex gap-4">
+          <button
+            class="hidden xl:flex xl:w-44 xl:h-11 bg-white xl:rounded-lg xl:border xl:border-gray-300 xl:items-center xl:justify-center xl:text-sm xl:font-bold xl:hover:bg-slate-50"
+          >
+            <svg
+              class="mr-2"
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              fill="currentColor"
+              viewBox="0 0 256 256"
+            >
+              <path
+                d="M227.32,73.37,182.63,28.69a16,16,0,0,0-22.63,0L36.69,152A15.86,15.86,0,0,0,32,163.31V208a16,16,0,0,0,16,16H216a8,8,0,0,0,0-16H115.32l112-112A16,16,0,0,0,227.32,73.37ZM79.32,188l90.34-90.34,16.69,16.68L96,204.69Zm79-101.66h0L68,176.69,51.31,160l90.35-90.34ZM48,179.31,76.69,208H48Z"
+              ></path>
+            </svg>
+
+            Become a Vendor
+          </button>
+
+          <button
+            class="w-14 h-11 bg-[#7243E6] text-white rounded-lg flex items-center justify-center md:w-20 md:font-semibold"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 256 256"
+              class="block md:hidden"
+              stroke="currentColor"
+            >
+              <path
+                d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM74.08,197.5a64,64,0,0,1,107.84,0,87.83,87.83,0,0,1-107.84,0ZM96,120a32,32,0,1,1,32,32A32,32,0,0,1,96,120Zm97.76,66.41a79.66,79.66,0,0,0-36.06-28.75,48,48,0,1,0-59.4,0,79.66,79.66,0,0,0-36.06,28.75,88,88,0,1,1,131.52,0Z"
+              ></path>
+            </svg>
+
+            <span class="hidden md:block lg:text-sm lg:font-bold">Sign Up</span>
+          </button>
+
+          <button
+            class="w-14 h-11 bg-[#FFFFFF] rounded-lg border-solid border-[1px] border-gray-300 flex items-center justify-center lg:hidden"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 256 256"
+              aria-hidden="true"
+              stroke="currentColor"
+              class="cz-color-723209 cz-color-15460325"
+            >
+              <path
+                d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"
+                class="cz-color-723209 cz-color-15460325"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+
+      <section class="px-4 pt-4 pb-6 md:pt-6 lg:pt-8">
+        <!-- icons -->
+
+        <!-- icons of left side -->
+        <div class="hidden xl:block absolute left-10 top-28">
+          <div class="relative w-[80px] h-[80px]">
+            <img src="../hero-bg-1.webp" alt="bg-hero-gradient" />
+            <div class="absolute top-[17px] left-[23px]">
+              <img
+                width="32"
+                height="32"
+                src="../akiflow-logo-header.webp"
+                alt="Akiflow's logo"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden xl:block absolute top-[8.5rem] left-48">
+          <div class="relative w-[80px] h-[80px]">
+            <img src="../hero-bg-2.webp" alt="bg-hero-gradient" />
+            <div class="absolute top-[15px] left-[20px]">
+              <img
+                width="38"
+                height="38"
+                src="../notion-logo-header.webp"
+                alt="notion-logo"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden xl:block absolute top-52 left-[6.5rem]">
+          <div class="relative w-[80px] h-[80px]">
+            <img src="../hero-bg-3.webp" alt="bg-hero-gradient" />
+            <div class="absolute top-[17px] left-[23px]">
+              <img
+                width="32"
+                height="32"
+                src="../zapier-logo-header.webp"
+                alt="zapier-logo"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- icons of right side -->
+        <div class="hidden xl:block absolute right-10 top-28">
+          <div class="relative w-[80px] h-[80px]">
+            <img src="../hero-bg-5.webp" alt="bg-hero-gradient" />
+            <div class="absolute top-[17px] left-[25px]">
+              <img
+                width="26"
+                height="26"
+                src="../setapp-logo-header.webp"
+                alt="setapp logo"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden xl:block absolute top-[8.5rem] right-48">
+          <div class="relative w-[80px] h-[80px]">
+            <img src="../hero-bg-4.webp" alt="bg-hero-gradient" />
+            <div class="absolute top-[13px] left-[20px]">
+              <img
+                width="38"
+                height="38"
+                src="../slack-logo-header.webp"
+                alt="Slack logo"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden xl:block absolute top-52 right-[6.5rem]">
+          <div class="relative w-[80px] h-[80px]">
+            <img src="../hero-bg-6.webp" alt="bg-hero-gradient" />
+            <div class="absolute top-[9px] left-[14px]">
+              <img
+                width="50"
+                height="50"
+                src="../granola-ai-logo-header.webp"
+                alt="granola-logo"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- heading h1 -->
+        <h1
+          class="text-center text-3xl font-bold font-inter tracking-tight leading-tight sm:text-4xl sm:leading-10 md:text-5xl md:leading-12 md:font-semibold pb-12 md:pb-8"
+        >
+          Discover & browse thousands of
+          <br class="block" />
+          <span class="text-[#7243E6]"> productivity tools. </span>
+          Just scroll.
+        </h1>
+
+        <!-- Search bar -->
+
+        <div class="relative flex items-center gap-x-7 w-full md:hidden">
+          <!-- search bar for default and sm screen-->
+
+          <input
+            id="search"
+            type="text"
+            placeholder="AI meeting tools"
+            class="w-[83vw] h-9 border-[1px] border-gray-300 rounded-lg pl-10 pr-4 pb-2 pt-1 placeholder:font-inter placeholder:text-sm placeholder:font-medium flex items-center focus:outline-[#7243E6]"
+          />
+
+          <div class="absolute left-[2vw]">
+            <svg
+              xmlns="http://www.w3.org/2002/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              viewBox="0 0 256 256"
+              class="text-gray-500"
+            >
+              <path
+                d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+              />
+            </svg>
+          </div>
+
+          <button class="text-[#7243E6] font-semibold font-inter text-sm">
+            Filters
+          </button>
+        </div>
+
+        <!-- search bar for md , lg , xl , 2xl screen -->
+
+        <div class="hidden md:block relative w-full max-w-[47rem] mx-auto">
+          <input
+            id="search"
+            type="text"
+            placeholder="Example: Find me a productivity tool for under $10/month for Macbook..."
+            class="w-full h-14 pl-4 pr-12 rounded-lg focus:outline-[#7243E6] placeholder:font-inter placeholder:text-base placeholder:font-light xl:h-12 animate-border-glow animate"
+          />
+
+          <!-- Search icon inside input -->
+          <div
+            class="absolute right-2 top-1/2 -translate-y-1/2 flex items-center justify-center bg-[#7243E6] h-10 w-10 rounded-lg xl:h-9 xl:w-9"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="21"
+              height="21"
+              fill="currentColor"
+              viewBox="0 0 256 256"
+              class="text-white"
+            >
+              <path
+                d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <!-- presented section div -->
+        <div class="hidden md:flex md:justify-center md:pt-6">
+          <div>
+            <span class="text-sm text-gray-500 font-inter pr-2">
+              Presented by:
+            </span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <img class="w-5" src="../sunsama-logo.webp" alt="sunsama logo" />
+            <span class="text-sm text-steel font-normal font-inter"
+              >The daily planner for deep work.</span
+            >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1em"
+              height="1em"
+              fill="currentColor"
+              viewBox="0 0 256 256"
+              class="ml-2 w-4 h-4 text-steel"
+            >
+              <path
+                d="M224,104a8,8,0,0,1-16,0V59.32l-66.33,66.34a8,8,0,0,1-11.32-11.32L196.68,48H152a8,8,0,0,1,0-16h64a8,8,0,0,1,8,8Zm-40,24a8,8,0,0,0-8,8v72H48V80h72a8,8,0,0,0,0-16H48A16,16,0,0,0,32,80V208a16,16,0,0,0,16,16H176a16,16,0,0,0,16-16V136A8,8,0,0,0,184,128Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- Card Section -->
+
+      <section
+        class="px-4 py-6 border-t-[1px] border-gray-300 grid grid-cols-1 md:grid-cols-2 md:gap-x-5 lg:grid-cols-3 2xl:grid-cols-4 gap-y-5 xl:px-8"
+      >
+        <!-- card 1 -->
+
+        <div
+          class="border-[1px] border-gray-300 rounded-lg w-full h-35vw transition ease-in-out duration-300 hover:-translate-y-1"
+        >
+          <div
+            class="bg-gradient-to-r from-[#564F58] to-[#4E9CB0] w-full h-2 rounded-tr-lg rounded-tl-lg"
+          ></div>
+          <div
+            class="bg-white w-full rounded-br-lg rounded-bl-lg p-5 space-y-3"
+          >
+            <div class="flex items-center justify-between">
+              <div
+                class="px-2.5 py-2.5 border-[1px] border-gray-300 rounded-lg"
+              >
+                <img
+                  src="../superhuman-logo.webp"
+                  alt="superhuman-logo"
+                  class="w-7"
+                />
+              </div>
+            </div>
+
+            <div class="space-y-3">
+              <div class="flex items-center">
+                <h2
+                  class="text-2xl font-inter font-bold tracking-tight text-[#111827] hover:text-[#7243E6] transition-colors duration-200"
+                >
+                  Superhuman
+                </h2>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="22"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                  class="text-[#7243E6] ml-2"
+                >
+                  <path
+                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"
+                  ></path>
+                </svg>
+              </div>
+
+              <h3 class="text-sm font-normal text-[#374151] font-inter pb-2">
+                Superhuman is an email app used by busy professionals for inbox
+                management
+              </h3>
+
+              <div class="flex items-center h-[42px] gap-2">
+                <button
+                  class="flex items-center justify-center gap-2 bg-[#7243E6] w-[79vw] h-full rounded-lg"
+                >
+                  <svg
+                    class="text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M228,104a12,12,0,0,1-24,0V69l-59.51,59.51a12,12,0,0,1-17-17L187,52H152a12,12,0,0,1,0-24h64a12,12,0,0,1,12,12Zm-44,24a12,12,0,0,0-12,12v64H52V84h64a12,12,0,0,0,0-24H48A20,20,0,0,0,28,80V208a20,20,0,0,0,20,20H176a20,20,0,0,0,20-20V140A12,12,0,0,0,184,128Z"
+                    ></path>
+                  </svg>
+                  <span class="font-semibold font-inter text-sm text-white">
+                    Visit Superhuman
+                  </span>
+                </button>
+
+                <button
+                  class="flex items-center justify-center border-[1px] border-gray-300 h-full w-[11vw] rounded-lg"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM184,96a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,96Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,128Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,160Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+
+        <div
+          class="bg-custom-gradient border-[1px] border-gray-300 rounded-lg w-full h-35vw transition ease-in-out duration-300 hover:-translate-y-1"
+        >
+          <div
+            class="bg-gradient-to-r from-[#9014fb] to-[#bc65fc] w-full h-2 rounded-tr-lg rounded-tl-lg"
+          ></div>
+          <div class="w-full rounded-br-lg rounded-bl-lg p-5 space-y-3">
+            <div class="flex items-center justify-between">
+              <div
+                class="px-2.5 py-2.5 border-[1px] rounded-lg bg-gradient-to-br from-[#0C1327]/50 to-[#000000]/50"
+              >
+                <img src="../Fellow-logo.webp" alt="Fellow-logo" class="w-7" />
+              </div>
+
+              <div
+                class="flex items-center px-2.5 py-1 rounded-2xl bg-[#7243E6]"
+              >
+                <span class="text-xs text-white font-inter font-medium">
+                  Sponsored
+                </span>
+              </div>
+            </div>
+
+            <div class="space-y-3">
+              <div class="flex items-center">
+                <h2 class="text-2xl font-inter font-bold text-white">Fellow</h2>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="22"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                  class="text-white ml-2"
+                >
+                  <path
+                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"
+                  ></path>
+                </svg>
+              </div>
+
+              <h3
+                class="text-sm font-medium text-white font-inter pb-2 tracking-tighter"
+              >
+                Fellow is the AI meeting assistant and notetaker for teams that
+                value security.
+              </h3>
+
+              <div class="flex items-center h-[42px] gap-2">
+                <button
+                  class="flex items-center justify-center gap-2 bg-white w-full h-full rounded-lg"
+                >
+                  <svg
+                    class="text-black"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M228,104a12,12,0,0,1-24,0V69l-59.51,59.51a12,12,0,0,1-17-17L187,52H152a12,12,0,0,1,0-24h64a12,12,0,0,1,12,12Zm-44,24a12,12,0,0,0-12,12v64H52V84h64a12,12,0,0,0,0-24H48A20,20,0,0,0,28,80V208a20,20,0,0,0,20,20H176a20,20,0,0,0,20-20V140A12,12,0,0,0,184,128Z"
+                    ></path>
+                  </svg>
+                  <span class="font-semibold font-inter text-sm text-black">
+                    Visit Fellow
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 3 -->
+
+        <div
+          class="border-[1px] border-gray-300 rounded-lg w-full h-auto transition ease-in-out duration-300 hover:-translate-y-1"
+        >
+          <div
+            class="bg-gradient-to-r from-[#f42c54] to-[#fccc04] w-full h-2 rounded-tr-lg rounded-tl-lg"
+          ></div>
+          <div
+            class="bg-white w-full rounded-br-lg rounded-bl-lg p-5 space-y-3"
+          >
+            <div class="flex items-center justify-between">
+              <div
+                class="px-2.5 py-3.5 border-[1px] border-gray-300 rounded-lg"
+              >
+                <img src="../monday-logo.webp" alt="monday-logo" class="w-7" />
+              </div>
+
+              <div
+                class="flex items-center px-2.5 py-1 rounded-2xl bg-[#DBF2FC]"
+              >
+                <span class="text-xs text-[#0369A1] font-inter font-medium">
+                  Top Pick
+                </span>
+              </div>
+            </div>
+
+            <div class="space-y-3">
+              <div class="flex items-center">
+                <h2
+                  class="text-2xl font-inter font-bold tracking-tight text-[#111827] hover:text-[#7243E6] transition-colors duration-200"
+                >
+                  monday
+                </h2>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="22"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                  class="text-[#7243E6] ml-2"
+                >
+                  <path
+                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"
+                  ></path>
+                </svg>
+              </div>
+
+              <h3 class="text-sm font-normal text-[#374151] font-inter pb-2">
+                monday.com offers an all-round project management for small to
+                large teams.
+              </h3>
+
+              <div class="flex items-center h-[42px] gap-2">
+                <button
+                  class="flex items-center justify-center gap-2 bg-[#7243E6] w-[79vw] h-full rounded-lg"
+                >
+                  <svg
+                    class="text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M228,104a12,12,0,0,1-24,0V69l-59.51,59.51a12,12,0,0,1-17-17L187,52H152a12,12,0,0,1,0-24h64a12,12,0,0,1,12,12Zm-44,24a12,12,0,0,0-12,12v64H52V84h64a12,12,0,0,0,0-24H48A20,20,0,0,0,28,80V208a20,20,0,0,0,20,20H176a20,20,0,0,0,20-20V140A12,12,0,0,0,184,128Z"
+                    ></path>
+                  </svg>
+                  <span class="font-semibold font-inter text-sm text-white">
+                    Visit monday
+                  </span>
+                </button>
+
+                <button
+                  class="flex items-center justify-center border-[1px] border-gray-300 h-full w-[11vw] rounded-lg"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM184,96a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,96Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,128Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,160Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 4 -->
+
+        <div
+          class="bg-custom-gradient border-[1px] border-gray-300 rounded-lg w-full h-35vw transition ease-in-out duration-300 hover:-translate-y-1"
+        >
+          <div
+            class="bg-gradient-to-r from-[#9014fb] to-[#bc65fc] w-full h-2 rounded-tr-lg rounded-tl-lg"
+          ></div>
+          <div class="w-full rounded-br-lg rounded-bl-lg p-5 space-y-3">
+            <div class="flex items-center justify-between">
+              <div
+                class="px-3 py-3 border-[1px] rounded-lg bg-gradient-to-br from-[#0C1327]/50 to-[#000000]/50"
+              >
+                <img
+                  src="../akiFlow-logo.webp"
+                  alt="AkiFlow-logo"
+                  class="w-7"
+                />
+              </div>
+
+              <div
+                class="flex items-center px-2.5 py-1 rounded-2xl bg-[#7243E6]"
+              >
+                <span class="text-xs text-white font-inter font-medium">
+                  Sponsored
+                </span>
+              </div>
+            </div>
+
+            <div class="space-y-3">
+              <div class="flex items-center">
+                <h2 class="text-2xl font-inter font-bold text-white">
+                  Akiflow
+                </h2>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="22"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                  class="text-white ml-2"
+                >
+                  <path
+                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"
+                  ></path>
+                </svg>
+              </div>
+
+              <h3
+                class="text-sm font-medium text-white font-inter pb-2 tracking-tighter"
+              >
+                Akiflow is a daily planner app for busy professionals for task &
+                calender management.
+              </h3>
+
+              <div class="flex items-center h-[42px] gap-2">
+                <button
+                  class="flex items-center justify-center gap-2 bg-white w-full h-full rounded-lg"
+                >
+                  <svg
+                    class="text-black"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M228,104a12,12,0,0,1-24,0V69l-59.51,59.51a12,12,0,0,1-17-17L187,52H152a12,12,0,0,1,0-24h64a12,12,0,0,1,12,12Zm-44,24a12,12,0,0,0-12,12v64H52V84h64a12,12,0,0,0,0-24H48A20,20,0,0,0,28,80V208a20,20,0,0,0,20,20H176a20,20,0,0,0,20-20V140A12,12,0,0,0,184,128Z"
+                    ></path>
+                  </svg>
+                  <span class="font-semibold font-inter text-sm text-black">
+                    Visit Akiflow
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--  card 5 -->
+
+        <div
+          class="bg-hero-gradient border-[1px] border-gray-300 rounded-lg w-full h-full md:col-span-2 transition ease-in-out duration-300 hover:-translate-y-1"
+        >
+          <div
+            class="bg-[linear-gradient(90deg,_rgb(76,29,149)_0%,_rgb(109,40,217)_30%,_rgb(124,58,237)_100%)] w-full h-2 rounded-tr-lg rounded-tl-lg"
+          ></div>
+
+          <div
+            class="p-4 md:p-6 md:gap-4 xl:gap-8 flex rounded-br-lg rounded-bl-lg"
+          >
+            <div class="w-full space-y-3">
+              <div class="space-y-3">
+                <h2 class="text-2xl font-inter font-semibold text-white">
+                  100+ Real-World Tool Stacks Explored
+                </h2>
+
+                <h3
+                  class="text-sm font-normal text-white font-inter pb-6 leading-6 lg:leading-5 lg:pb-3 xl:leading-6 xl:font-light"
+                >
+                  Explore over 100+ case studies of how real people use tools
+                  every single day. From start-up founders to health
+                  enthusiasts, discover what tools they use to get things done
+                  and manage their work.
+                </h3>
+
+                <div class="flex items-center h-[42px] gap-2 md:w-44">
+                  <button
+                    class="flex items-center justify-center gap-2 bg-white w-full h-full rounded-lg"
+                  >
+                    <svg
+                      class="text-black"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      viewBox="0 0 256 256"
+                    >
+                      <path
+                        d="M228,104a12,12,0,0,1-24,0V69l-59.51,59.51a12,12,0,0,1-17-17L187,52H152a12,12,0,0,1,0-24h64a12,12,0,0,1,12,12Zm-44,24a12,12,0,0,0-12,12v64H52V84h64a12,12,0,0,0,0-24H48A20,20,0,0,0,28,80V208a20,20,0,0,0,20,20H176a20,20,0,0,0,20-20V140A12,12,0,0,0,184,128Z"
+                      ></path>
+                    </svg>
+                    <span class="font-semibold font-inter text-sm text-black">
+                      Explore Stacks
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="hidden md:flex items-center w-[42vw] lg:w-[29vw]">
+              <img
+                src="../icons-collective-large.webp"
+                alt="icons-collective-img"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- card 6 -->
+
+        <div
+          class="border-[1px] border-gray-300 rounded-lg w-full h-auto transition ease-in-out duration-300 hover:-translate-y-1"
+        >
+          <div
+            class="bg-[#6366f1] w-full h-2 rounded-tr-lg rounded-tl-lg"
+          ></div>
+          <div
+            class="bg-white w-full rounded-br-lg rounded-bl-lg p-5 space-y-3"
+          >
+            <div class="flex items-center justify-between">
+              <div
+                class="px-2.5 py-3.5 border-[1px] border-gray-300 rounded-lg"
+              >
+                <img src="../wisdom.webp" alt="wisdom-logo" class="w-7" />
+              </div>
+
+              <div
+                class="flex items-center px-2.5 py-1 rounded-2xl bg-[#DBF2FC]"
+              >
+                <span class="text-xs text-[#0369A1] font-inter font-medium">
+                  Promoted
+                </span>
+              </div>
+            </div>
+
+            <div class="space-y-3">
+              <div class="flex items-center">
+                <h2
+                  class="text-2xl font-inter font-bold tracking-tight text-[#111827] hover:text-[#7243E6] transition-colors duration-200"
+                >
+                  Wisdom
+                </h2>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="22"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                  class="text-[#7243E6] ml-2"
+                >
+                  <path
+                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"
+                  ></path>
+                </svg>
+              </div>
+
+              <h3 class="text-sm font-normal text-[#374151] font-inter pb-2">
+                Wisdom brings together projects, clients , time and financials.
+              </h3>
+
+              <div class="flex items-center h-[42px] gap-2">
+                <button
+                  class="flex items-center justify-center gap-2 bg-[#7243E6] w-[79vw] h-full rounded-lg"
+                >
+                  <svg
+                    class="text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M228,104a12,12,0,0,1-24,0V69l-59.51,59.51a12,12,0,0,1-17-17L187,52H152a12,12,0,0,1,0-24h64a12,12,0,0,1,12,12Zm-44,24a12,12,0,0,0-12,12v64H52V84h64a12,12,0,0,0,0-24H48A20,20,0,0,0,28,80V208a20,20,0,0,0,20,20H176a20,20,0,0,0,20-20V140A12,12,0,0,0,184,128Z"
+                    ></path>
+                  </svg>
+                  <span class="font-semibold font-inter text-sm text-white">
+                    Visit Wisdom
+                  </span>
+                </button>
+
+                <button
+                  class="flex items-center justify-center border-[1px] border-gray-300 h-full w-[11vw] rounded-lg"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM184,96a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,96Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,128Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,160Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 7 -->
+
+        <div
+          class="border-[1px] border-gray-300 rounded-lg w-full h-auto transition ease-in-out duration-300 hover:-translate-y-1"
+        >
+          <div
+            class="bg-gradient-to-r from-[#2af6e9] to-[#75f5c0] w-full h-2 rounded-tr-lg rounded-tl-lg"
+          ></div>
+          <div
+            class="bg-white w-full rounded-br-lg rounded-bl-lg p-5 space-y-3"
+          >
+            <div class="flex items-center justify-between">
+              <div
+                class="px-2.5 py-2.5 border-[1px] border-gray-300 rounded-lg"
+              >
+                <img
+                  src="../blitzit-logo.webp"
+                  alt="Blitzit-logo"
+                  class="w-7"
+                />
+              </div>
+
+              <div
+                class="flex items-center px-2.5 py-1 rounded-2xl bg-[#DBF2FC]"
+              >
+                <span class="text-xs text-[#0369A1] font-inter font-medium">
+                  Hidden Gem
+                </span>
+              </div>
+            </div>
+
+            <div class="space-y-3">
+              <div class="flex items-center">
+                <h2
+                  class="text-2xl font-inter font-bold tracking-tight text-[#111827] hover:text-[#7243E6] transition-colors duration-200"
+                >
+                  Blitzit
+                </h2>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="22"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                  class="text-[#7243E6] ml-2"
+                >
+                  <path
+                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"
+                  ></path>
+                </svg>
+              </div>
+
+              <h3 class="text-sm font-normal text-[#374151] font-inter pb-2">
+                blitzit is a to-do list app with time tracking, checklists,
+                alerts & focus states.
+              </h3>
+
+              <div class="flex items-center h-[42px] gap-2">
+                <button
+                  class="flex items-center justify-center gap-2 bg-[#7243E6] w-[79vw] h-full rounded-lg"
+                >
+                  <svg
+                    class="text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M228,104a12,12,0,0,1-24,0V69l-59.51,59.51a12,12,0,0,1-17-17L187,52H152a12,12,0,0,1,0-24h64a12,12,0,0,1,12,12Zm-44,24a12,12,0,0,0-12,12v64H52V84h64a12,12,0,0,0,0-24H48A20,20,0,0,0,28,80V208a20,20,0,0,0,20,20H176a20,20,0,0,0,20-20V140A12,12,0,0,0,184,128Z"
+                    ></path>
+                  </svg>
+                  <span class="font-semibold font-inter text-sm text-white">
+                    Visit Blitzit
+                  </span>
+                </button>
+
+                <button
+                  class="flex items-center justify-center border-[1px] border-gray-300 h-full w-[11vw] rounded-lg"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM184,96a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,96Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,128Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,160Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 8 -->
+
+        <div
+          class="border-[1px] border-gray-300 rounded-lg w-full h-auto transition ease-in-out duration-300 hover:-translate-y-1"
+        >
+          <div
+            class="bg-gradient-to-r from-[#7c7c7c] to-[#bcbcbc] w-full h-2 rounded-tr-lg rounded-tl-lg"
+          ></div>
+          <div
+            class="bg-white w-full rounded-br-lg rounded-bl-lg p-5 space-y-3"
+          >
+            <div class="flex items-center justify-between">
+              <div
+                class="px-2.5 py-2.5 border-[1px] border-gray-300 rounded-lg"
+              >
+                <img src="../rize-logo.webp" alt="rize-logo" class="w-7" />
+              </div>
+            </div>
+
+            <div class="space-y-3">
+              <div class="flex items-center">
+                <h2
+                  class="text-2xl font-inter font-bold tracking-tight text-[#111827] hover:text-[#7243E6] transition-colors duration-200"
+                >
+                  Rize
+                </h2>
+              </div>
+
+              <h3 class="text-sm font-normal text-[#374151] font-inter pb-2">
+                Rize is an AI powered time tracking tool to improve personal
+                productivity with data.
+              </h3>
+
+              <div class="flex items-center h-[42px] gap-2">
+                <button
+                  class="flex items-center justify-center gap-2 bg-[#7243E6] w-[79vw] h-full rounded-lg"
+                >
+                  <svg
+                    class="text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M228,104a12,12,0,0,1-24,0V69l-59.51,59.51a12,12,0,0,1-17-17L187,52H152a12,12,0,0,1,0-24h64a12,12,0,0,1,12,12Zm-44,24a12,12,0,0,0-12,12v64H52V84h64a12,12,0,0,0,0-24H48A20,20,0,0,0,28,80V208a20,20,0,0,0,20,20H176a20,20,0,0,0,20-20V140A12,12,0,0,0,184,128Z"
+                    ></path>
+                  </svg>
+                  <span class="font-semibold font-inter text-sm text-white">
+                    Visit Rize
+                  </span>
+                </button>
+
+                <button
+                  class="flex items-center justify-center border-[1px] border-gray-300 h-full w-[11vw] rounded-lg"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM184,96a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,96Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,128Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,160Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 9 -->
+
+        <div
+          class="border-[1px] border-gray-300 rounded-lg w-full h-auto transition ease-in-out duration-300 hover:-translate-y-1"
+        >
+          <div
+            class="bg-[rgb(99,102,241)] w-full h-2 rounded-tr-lg rounded-tl-lg"
+          ></div>
+          <div
+            class="bg-white w-full rounded-br-lg rounded-bl-lg p-5 space-y-3"
+          >
+            <div class="flex items-center justify-between">
+              <div
+                class="px-2.5 py-2.5 border-[1px] border-gray-300 rounded-lg"
+              >
+                <img src="../day-flow.webp" alt="day-flow-logo" class="w-7" />
+              </div>
+            </div>
+
+            <div class="space-y-3">
+              <div class="flex items-center">
+                <h2
+                  class="text-2xl font-inter font-bold tracking-tight text-[#111827] hover:text-[#7243E6] transition-colors duration-200"
+                >
+                  Day Flow
+                </h2>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="22"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                  class="text-[#7243E6] ml-2"
+                >
+                  <path
+                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"
+                  ></path>
+                </svg>
+              </div>
+
+              <h3 class="text-sm font-normal text-[#374151] font-inter pb-2">
+                Day Flow is an ADHD habit & calender app for tracking events &
+                habits.
+              </h3>
+
+              <div class="flex items-center h-[42px] gap-2">
+                <button
+                  class="flex items-center justify-center gap-2 bg-[#7243E6] w-[79vw] h-full rounded-lg"
+                >
+                  <svg
+                    class="text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M228,104a12,12,0,0,1-24,0V69l-59.51,59.51a12,12,0,0,1-17-17L187,52H152a12,12,0,0,1,0-24h64a12,12,0,0,1,12,12Zm-44,24a12,12,0,0,0-12,12v64H52V84h64a12,12,0,0,0,0-24H48A20,20,0,0,0,28,80V208a20,20,0,0,0,20,20H176a20,20,0,0,0,20-20V140A12,12,0,0,0,184,128Z"
+                    ></path>
+                  </svg>
+                  <span class="font-semibold font-inter text-sm text-white">
+                    Visit Day Flow
+                  </span>
+                </button>
+
+                <button
+                  class="flex items-center justify-center border-[1px] border-gray-300 h-full w-[11vw] rounded-lg"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM184,96a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,96Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,128Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,160Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 10 -->
+
+        <div
+          class="bg-custom-gradient border-[1px] border-gray-300 rounded-lg w-full h-35vw transition ease-in-out duration-300 hover:-translate-y-1"
+        >
+          <div
+            class="bg-gradient-to-r from-[rgb(252,124,84)] to-[rgb(252,155,124)] w-full h-2 rounded-tr-lg rounded-tl-lg"
+          ></div>
+          <div class="w-full rounded-br-lg rounded-bl-lg p-5 space-y-3">
+            <div class="flex items-center justify-between">
+              <div
+                class="px-2.5 py-2.5 border-[1px] rounded-lg bg-gradient-to-br from-[#0C1327]/50 to-[#000000]/50"
+              >
+                <img src="../hubspot.webp" alt="hubspot-logo" class="w-7" />
+              </div>
+
+              <div
+                class="flex items-center px-2.5 py-1 rounded-2xl bg-[#7243E6]"
+              >
+                <span class="text-xs text-white font-inter font-medium">
+                  Sponsored
+                </span>
+              </div>
+            </div>
+
+            <div class="space-y-3">
+              <div class="flex items-center">
+                <h2 class="text-2xl font-inter font-bold text-white">
+                  HubSpot CRM
+                </h2>
+              </div>
+
+              <h3
+                class="text-sm font-medium text-white font-inter pb-2 tracking-tighter"
+              >
+                HubSpot is a CRM software for teams to streamline customer or
+                client relationships.
+              </h3>
+
+              <div class="flex items-center h-[42px] gap-2">
+                <button
+                  class="flex items-center justify-center gap-2 bg-white w-full h-full rounded-lg"
+                >
+                  <svg
+                    class="text-black"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M228,104a12,12,0,0,1-24,0V69l-59.51,59.51a12,12,0,0,1-17-17L187,52H152a12,12,0,0,1,0-24h64a12,12,0,0,1,12,12Zm-44,24a12,12,0,0,0-12,12v64H52V84h64a12,12,0,0,0,0-24H48A20,20,0,0,0,28,80V208a20,20,0,0,0,20,20H176a20,20,0,0,0,20-20V140A12,12,0,0,0,184,128Z"
+                    ></path>
+                  </svg>
+                  <span class="font-semibold font-inter text-sm text-black">
+                    Visit HubSpot CRM
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 11 -->
+
+        <div
+          class="border-[1px] border-gray-300 rounded-lg w-full h-auto transition ease-in-out duration-300 hover:-translate-y-1"
+        >
+          <div
+            class="bg-[rgb(99,102,241)] w-full h-2 rounded-tr-lg rounded-tl-lg"
+          ></div>
+          <div
+            class="bg-white w-full rounded-br-lg rounded-bl-lg p-5 space-y-3"
+          >
+            <div class="flex items-center justify-between">
+              <div
+                class="px-2.5 py-2.5 border-[1px] border-gray-300 rounded-lg"
+              >
+                <img src="../willow.webp" alt="willow-logo" class="w-7" />
+              </div>
+
+              <div
+                class="flex items-center px-2.5 py-1 rounded-2xl bg-[#DBF2FC]"
+              >
+                <span class="text-xs text-[#0369A1] font-inter font-medium">
+                  Promoted
+                </span>
+              </div>
+            </div>
+
+            <div class="space-y-3">
+              <div class="flex items-center">
+                <h2
+                  class="text-2xl font-inter font-bold tracking-tight text-[#111827] hover:text-[#7243E6] transition-colors duration-200"
+                >
+                  Willow
+                </h2>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="22"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                  class="text-[#7243E6] ml-2"
+                >
+                  <path
+                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"
+                  ></path>
+                </svg>
+              </div>
+
+              <h3 class="text-sm font-normal text-[#374151] font-inter pb-2">
+                The only voice dictation app that fast, personalized, and writes
+                anywhere.
+              </h3>
+
+              <div class="flex items-center h-[42px] gap-2">
+                <button
+                  class="flex items-center justify-center gap-2 bg-[#7243E6] w-[79vw] h-full rounded-lg"
+                >
+                  <svg
+                    class="text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M228,104a12,12,0,0,1-24,0V69l-59.51,59.51a12,12,0,0,1-17-17L187,52H152a12,12,0,0,1,0-24h64a12,12,0,0,1,12,12Zm-44,24a12,12,0,0,0-12,12v64H52V84h64a12,12,0,0,0,0-24H48A20,20,0,0,0,28,80V208a20,20,0,0,0,20,20H176a20,20,0,0,0,20-20V140A12,12,0,0,0,184,128Z"
+                    ></path>
+                  </svg>
+                  <span class="font-semibold font-inter text-sm text-white">
+                    Visit Willow
+                  </span>
+                </button>
+
+                <button
+                  class="flex items-center justify-center border-[1px] border-gray-300 h-full w-[11vw] rounded-lg"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM184,96a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,96Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,128Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,160Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 12 -->
+
+        <div
+          class="border-[1px] border-gray-300 rounded-lg w-full h-auto transition ease-in-out duration-300 hover:-translate-y-1"
+        >
+          <div
+            class="bg-gradient-to-r from-[#7c7c7c] to-[#bcbcbc] w-full h-2 rounded-tr-lg rounded-tl-lg"
+          ></div>
+          <div
+            class="bg-white w-full rounded-br-lg rounded-bl-lg p-5 space-y-3"
+          >
+            <div class="flex items-center justify-between">
+              <div
+                class="px-2.5 py-2.5 border-[1px] border-gray-300 rounded-lg"
+              >
+                <img src="../motion.webp" alt="motion-logo" class="w-7" />
+              </div>
+            </div>
+
+            <div class="space-y-3">
+              <div class="flex items-center">
+                <h2
+                  class="text-2xl font-inter font-bold tracking-tight text-[#111827] hover:text-[#7243E6] transition-colors duration-200"
+                >
+                  Motion
+                </h2>
+              </div>
+
+              <h3 class="text-sm font-normal text-[#374151] font-inter pb-2">
+                Motion is an AI-focused planner app designed for tasks, calender
+                events & meetings.
+              </h3>
+
+              <div class="flex items-center h-[42px] gap-2">
+                <button
+                  class="flex items-center justify-center gap-2 bg-[#7243E6] w-[79vw] h-full rounded-lg"
+                >
+                  <svg
+                    class="text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M228,104a12,12,0,0,1-24,0V69l-59.51,59.51a12,12,0,0,1-17-17L187,52H152a12,12,0,0,1,0-24h64a12,12,0,0,1,12,12Zm-44,24a12,12,0,0,0-12,12v64H52V84h64a12,12,0,0,0,0-24H48A20,20,0,0,0,28,80V208a20,20,0,0,0,20,20H176a20,20,0,0,0,20-20V140A12,12,0,0,0,184,128Z"
+                    ></path>
+                  </svg>
+                  <span class="font-semibold font-inter text-sm text-white">
+                    Visit Motion
+                  </span>
+                </button>
+
+                <button
+                  class="flex items-center justify-center border-[1px] border-gray-300 h-full w-[11vw] rounded-lg"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM184,96a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,96Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,128Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,160Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 13 -->
+
+        <div
+          class="border-[1px] border-gray-300 rounded-lg w-full h-auto transition ease-in-out duration-300 hover:-translate-y-1"
+        >
+          <div
+            class="bg-gradient-to-r from-[#dc341c] to-[#b75f58] w-full h-2 rounded-tr-lg rounded-tl-lg"
+          ></div>
+          <div
+            class="bg-white w-full rounded-br-lg rounded-bl-lg p-5 space-y-3"
+          >
+            <div class="flex items-center justify-between">
+              <div
+                class="px-2.5 py-2.5 border-[1px] border-gray-300 rounded-lg"
+              >
+                <img src="../superlist.webp" alt="superlist-logo" class="w-7" />
+              </div>
+            </div>
+
+            <div class="space-y-3">
+              <div class="flex items-center">
+                <h2
+                  class="text-2xl font-inter font-bold tracking-tight text-[#111827] hover:text-[#7243E6] transition-colors duration-200"
+                >
+                  Superlist
+                </h2>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="22"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                  class="text-[#7243E6] ml-2"
+                >
+                  <path
+                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"
+                  ></path>
+                </svg>
+              </div>
+
+              <h3 class="text-sm font-normal text-[#374151] font-inter pb-2">
+                Superlist is a task management app for your team to manage task
+                and notes.
+              </h3>
+
+              <div class="flex items-center h-[42px] gap-2">
+                <button
+                  class="flex items-center justify-center gap-2 bg-[#7243E6] w-[79vw] h-full rounded-lg"
+                >
+                  <svg
+                    class="text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M228,104a12,12,0,0,1-24,0V69l-59.51,59.51a12,12,0,0,1-17-17L187,52H152a12,12,0,0,1,0-24h64a12,12,0,0,1,12,12Zm-44,24a12,12,0,0,0-12,12v64H52V84h64a12,12,0,0,0,0-24H48A20,20,0,0,0,28,80V208a20,20,0,0,0,20,20H176a20,20,0,0,0,20-20V140A12,12,0,0,0,184,128Z"
+                    ></path>
+                  </svg>
+                  <span class="font-semibold font-inter text-sm text-white">
+                    Visit Superlist
+                  </span>
+                </button>
+
+                <button
+                  class="flex items-center justify-center border-[1px] border-gray-300 h-full w-[11vw] rounded-lg"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM184,96a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,96Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,128Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,160Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 14 -->
+
+        <div
+          class="border-[1px] border-gray-300 rounded-lg w-full h-auto transition ease-in-out duration-300 hover:-translate-y-1"
+        >
+          <div
+            class="bg-gradient-to-r from-[#3444fb] to-[#04e2f7] w-full h-2 rounded-tr-lg rounded-tl-lg"
+          ></div>
+          <div
+            class="bg-white w-full rounded-br-lg rounded-bl-lg p-5 space-y-3"
+          >
+            <div class="flex items-center justify-between">
+              <div
+                class="px-2.5 py-2.5 border-[1px] border-gray-300 rounded-lg"
+              >
+                <img src="../morgen-logo.webp" alt="morgen-logo" class="w-7" />
+              </div>
+
+              <div
+                class="flex items-center px-2.5 py-1 rounded-2xl bg-[#DBF2FC]"
+              >
+                <span class="text-xs text-[#0369A1] font-inter font-medium">
+                  Top Pick
+                </span>
+              </div>
+            </div>
+
+            <div class="space-y-3">
+              <div class="flex items-center">
+                <h2
+                  class="text-2xl font-inter font-bold tracking-tight text-[#111827] hover:text-[#7243E6] transition-colors duration-200"
+                >
+                  Morgen
+                </h2>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="22"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                  class="text-[#7243E6] ml-2"
+                >
+                  <path
+                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"
+                  ></path>
+                </svg>
+              </div>
+
+              <h3 class="text-sm font-normal text-[#374151] font-inter pb-2">
+                Morgen calender wants to help manage tasks, calender &
+                scheduling in one.
+              </h3>
+
+              <div class="flex items-center h-[42px] gap-2">
+                <button
+                  class="flex items-center justify-center gap-2 bg-[#7243E6] w-[79vw] h-full rounded-lg"
+                >
+                  <svg
+                    class="text-white"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M228,104a12,12,0,0,1-24,0V69l-59.51,59.51a12,12,0,0,1-17-17L187,52H152a12,12,0,0,1,0-24h64a12,12,0,0,1,12,12Zm-44,24a12,12,0,0,0-12,12v64H52V84h64a12,12,0,0,0,0-24H48A20,20,0,0,0,28,80V208a20,20,0,0,0,20,20H176a20,20,0,0,0,20-20V140A12,12,0,0,0,184,128Z"
+                    ></path>
+                  </svg>
+                  <span class="font-semibold font-inter text-sm text-white">
+                    Visit Morgen
+                  </span>
+                </button>
+
+                <button
+                  class="flex items-center justify-center border-[1px] border-gray-300 h-full w-[11vw] rounded-lg"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM184,96a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,96Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,128Zm0,32a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h96A8,8,0,0,1,184,160Z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- inspiration card section -->
+
+      <section class="mt-10">
+        <div
+          class="px-4 py-6 border-t-[1px] border-gray-200 space-y-6 sm:px-6 sm:py-8 lg:px-8"
+        >
+          <div class="space-y-3 sm:space-y-4">
+            <h2
+              class="text-2xl leading-6 font-semibold font-inter truncate sm:text-4xl"
+            >
+              Inspiration for your next tool
+            </h2>
+            <p
+              class="text-sm font-normal text-[#11182799] font-inter sm:text-base"
+            >
+              Discover the best productivity tools via our lists
+            </p>
+          </div>
+
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 lg:grid-cols-3 xl:grid-cols-5"
+          >
+            <!-- 1 -->
+            <div
+              class="border border-gray-200 flex items-center p-3 rounded-lg"
+            >
+              <div
+                class="h-10 w-10 sm:h-12 sm:w-12 flex justify-center items-center border border-[#e3e3e8] rounded-lg"
+              >
+                <img
+                  src="../clickup-logo.webp"
+                  alt="clipup-logo"
+                  class="w-6 h-7"
+                />
+              </div>
+              <div class="pl-4 min-w-0 flex-1">
+                <h2
+                  class="text-sm font-semibold font-inter truncate sm:text-base"
+                >
+                  Best Project Management Tools
+                </h2>
+                <h3
+                  class="text-xs mt-0.5 font-normal text-[#11182799] font-inter truncate sm:text-sm"
+                >
+                  Discover the best tools for team collaboration &
+                  communication.
+                </h3>
+              </div>
+              <div></div>
+            </div>
+            <!-- 2 -->
+            <div
+              class="border border-gray-200 flex items-center p-3 rounded-lg"
+            >
+              <div
+                class="h-10 w-10 sm:h-12 sm:w-12 flex justify-center items-center border border-[#e3e3e8] rounded-lg"
+              >
+                <img
+                  src="../reflect-notes-logo.webp"
+                  alt="reflect-notes-logo"
+                  class="w-7 h-7"
+                />
+              </div>
+              <div class="pl-4 min-w-0 flex-1">
+                <h2
+                  class="text-sm font-semibold font-inter truncate sm:text-base"
+                >
+                  Best AI Note-Taking Software
+                </h2>
+                <h3
+                  class="text-xs mt-0.5 font-normal text-[#11182799] font-inter truncate sm:text-sm"
+                >
+                  Optimize your note-taking and personal knowledge management.
+                </h3>
+              </div>
+              <div></div>
+            </div>
+            <!-- 3 -->
+            <div
+              class="border border-gray-200 flex items-center p-3 rounded-lg"
+            >
+              <div
+                class="h-10 w-10 sm:h-12 sm:w-12 flex justify-center items-center border border-[#e3e3e8] rounded-lg"
+              >
+                <img src="../motion.webp" alt="motion-logo" class="w-7 h-7" />
+              </div>
+              <div class="pl-4 min-w-0 flex-1">
+                <h2
+                  class="text-sm font-semibold font-inter truncate sm:text-base"
+                >
+                  Best AI Daily Planning Software
+                </h2>
+                <h3
+                  class="text-xs mt-0.5 font-normal text-[#11182799] font-inter truncate sm:text-sm"
+                >
+                  Choose your priorities, organize your day and get more things
+                  done.
+                </h3>
+              </div>
+              <div></div>
+            </div>
+            <!-- 4 -->
+            <div
+              class="border border-gray-200 flex items-center p-3 rounded-lg"
+            >
+              <div
+                class="h-10 w-10 sm:h-12 sm:w-12 flex justify-center items-center border border-[#e3e3e8] rounded-lg"
+              >
+                <img
+                  src="../superhuman-logo.webp"
+                  alt="superhuman-logo"
+                  class="w-7 h-7"
+                />
+              </div>
+              <div class="pl-4 min-w-0 flex-1">
+                <h2
+                  class="text-sm font-semibold font-inter truncate sm:text-base"
+                >
+                  Best AI Email Management Tools
+                </h2>
+                <h3
+                  class="text-xs mt-0.5 font-normal text-[#11182799] font-inter truncate sm:text-sm"
+                >
+                  Get through your inbox with ease and organize your email with
+                  speed.
+                </h3>
+              </div>
+              <div></div>
+            </div>
+            <!-- 5 -->
+            <div
+              class="border border-gray-200 flex items-center p-3 rounded-lg"
+            >
+              <div
+                class="h-10 w-10 sm:h-12 sm:w-12 flex justify-center items-center border border-[#e3e3e8] rounded-lg"
+              >
+                <img
+                  src="../granola-logo.webp"
+                  alt="granola-logo"
+                  class="w-6 h-6"
+                />
+              </div>
+              <div class="pl-4 min-w-0 flex-1">
+                <h2
+                  class="text-sm font-semibold font-inter truncate sm:text-base"
+                >
+                  Best AI Meeting Tools
+                </h2>
+                <h3
+                  class="text-xs mt-0.5 font-normal text-[#11182799] font-inter truncate sm:text-sm"
+                >
+                  Enhance your meetings and reduce administration daily with
+                  transcriptions.
+                </h3>
+              </div>
+              <div></div>
+            </div>
+            <!-- 6 -->
+            <div
+              class="border border-gray-200 flex items-center p-3 rounded-lg"
+            >
+              <div
+                class="h-10 w-10 sm:h-12 sm:w-12 flex justify-center items-center border border-[#e3e3e8] rounded-lg"
+              >
+                <img
+                  src="../lunatask-logo.webp"
+                  alt="lunatask-logo"
+                  class="w-7 h-7"
+                />
+              </div>
+              <div class="pl-4 min-w-0 flex-1">
+                <h2
+                  class="text-sm font-semibold font-inter truncate sm:text-base"
+                >
+                  Best Productivity Tools for ADHD
+                </h2>
+                <h3
+                  class="text-xs mt-0.5 font-normal text-[#11182799] font-inter truncate sm:text-sm"
+                >
+                  Work better with your ADHD with productivity tools designed
+                  for your way of work.
+                </h3>
+              </div>
+              <div></div>
+            </div>
+            <!-- 7 -->
+            <div
+              class="border border-gray-200 flex items-center p-3 rounded-lg"
+            >
+              <div
+                class="h-10 w-10 sm:h-12 sm:w-12 flex justify-center items-center border border-[#e3e3e8] rounded-lg"
+              >
+                <img
+                  src="../folk-crm-logo.webp"
+                  alt="folk-crm-logo"
+                  class="w-7 h-7"
+                />
+              </div>
+              <div class="pl-4 min-w-0 flex-1">
+                <h2
+                  class="text-sm font-semibold font-inter truncate sm:text-base"
+                >
+                  Best CRM Software for Teams
+                </h2>
+                <h3
+                  class="text-xs mt-0.5 font-normal text-[#11182799] font-inter truncate sm:text-sm"
+                >
+                  Capture your leads, nurture your contacts & manage
+                  relationships with these tools.
+                </h3>
+              </div>
+              <div></div>
+            </div>
+            <!-- 8 -->
+            <div
+              class="border border-gray-200 flex items-center p-3 rounded-lg"
+            >
+              <div
+                class="h-10 w-10 sm:h-12 sm:w-12 flex justify-center items-center border border-[#e3e3e8] rounded-lg"
+              >
+                <img
+                  src="../bear-notes-logo.webp"
+                  alt="bear-notes-logo"
+                  class="w-7 h-7"
+                />
+              </div>
+              <div class="pl-4 min-w-0 flex-1">
+                <h2
+                  class="text-sm font-semibold font-inter truncate sm:text-base"
+                >
+                  Best Markdown Note-Taking Tools
+                </h2>
+                <h3
+                  class="text-xs mt-0.5 font-normal text-[#11182799] font-inter truncate sm:text-sm"
+                >
+                  Markdown note-taking apps help you to better take notes for
+                  more markdown rich note-takers. Here's our best markdown
+                  note-taking apps and why they are special for those who have
+                  learnt or embraced markdown.
+                </h3>
+              </div>
+              <div></div>
+            </div>
+            <!-- 9 -->
+            <div
+              class="border border-gray-200 flex items-center p-3 rounded-lg"
+            >
+              <div
+                class="h-10 w-10 sm:h-12 sm:w-12 flex justify-center items-center border border-[#e3e3e8] rounded-lg"
+              >
+                <img
+                  src="../evernote-logo.webp"
+                  alt="evernote-logo"
+                  class="w-7 h-7"
+                />
+              </div>
+              <div class="pl-4 min-w-0 flex-1">
+                <h2
+                  class="text-sm font-semibold font-inter truncate sm:text-base"
+                >
+                  Best AI Note-Taking Tools
+                </h2>
+                <h3
+                  class="text-xs mt-0.5 font-normal text-[#11182799] font-inter truncate sm:text-sm"
+                >
+                  AI note-taking apps can help you get more done using your
+                  existing notes and transforming them to be more helpful and
+                  powerful. Here are our expert picks of the free AI tools for
+                  note-taking for you to upgrade how you take notes daily.
+                </h3>
+              </div>
+              <div></div>
+            </div>
+            <!-- 10 -->
+            <div
+              class="border border-gray-200 flex items-center p-3 rounded-lg"
+            >
+              <div
+                class="h-10 w-10 sm:h-12 sm:w-12 flex justify-center items-center border border-[#e3e3e8] rounded-lg"
+              >
+                <img
+                  src="../cupla-logo.webp"
+                  alt="cupla-logo"
+                  class="w-7 h-7"
+                />
+              </div>
+              <div class="pl-4 min-w-0 flex-1">
+                <h2
+                  class="text-sm font-semibold font-inter truncate sm:text-base"
+                >
+                  Best Shared Calendar Apps for Couples
+                </h2>
+                <h3
+                  class="text-xs mt-0.5 font-normal text-[#11182799] font-inter truncate sm:text-sm"
+                >
+                  Create an in sync lifestyle for you and your partner by using
+                  a shared calendar app. This means you will no longer forget
+                  important dates, whats for dinner and who's doing what chores
+                  that day. Using a shared calendar for couples takes away the
+                  guess work.
+                </h3>
+              </div>
+              <div></div>
+            </div>
+            <!-- 11 -->
+            <div
+              class="border border-gray-200 flex items-center p-3 rounded-lg"
+            >
+              <div
+                class="h-10 w-10 sm:h-12 sm:w-12 flex justify-center items-center border border-[#e3e3e8] rounded-lg"
+              >
+                <img
+                  src="../twist-logo.webp"
+                  alt="twist-logo"
+                  class="w-7 h-7"
+                />
+              </div>
+              <div class="pl-4 min-w-0 flex-1">
+                <h2
+                  class="text-sm font-semibold font-inter truncate sm:text-base"
+                >
+                  Best Team Chat Apps for Collaboration
+                </h2>
+                <h3
+                  class="text-xs mt-0.5 font-normal text-[#11182799] font-inter truncate sm:text-sm"
+                >
+                  Team chat apps are useful for giving a team space for all
+                  communication about tasks, projects and business. By using a
+                  team messaging app you can keep everything in one place and
+                  organise key information to look back on.
+                </h3>
+              </div>
+              <div></div>
+            </div>
+            <!-- 12 -->
+            <div
+              class="border border-gray-200 flex items-center p-3 rounded-lg"
+            >
+              <div
+                class="h-10 w-10 sm:h-12 sm:w-12 flex justify-center items-center border border-[#e3e3e8] rounded-lg"
+              >
+                <img src="../rize-logo.webp" alt="rize-logo" class="w-7 h-7" />
+              </div>
+              <div class="pl-4 min-w-0 flex-1">
+                <h2
+                  class="text-sm font-semibold font-inter truncate sm:text-base"
+                >
+                  Top Time Management Apps
+                </h2>
+                <h3
+                  class="text-xs mt-0.5 font-normal text-[#11182799] font-inter truncate sm:text-sm"
+                >
+                  Here's our list of the best time management apps to help you
+                  become more productive, focus on tasks better and make the
+                  most of your time to create a better work-life balance and get
+                  more done. See our best apps for time management below.
+                </h3>
+              </div>
+              <div></div>
+            </div>
+            <!-- 13 -->
+            <div
+              class="border border-gray-200 flex items-center p-3 rounded-lg"
+            >
+              <div
+                class="h-10 w-10 sm:h-12 sm:w-12 flex justify-center items-center border border-[#e3e3e8] rounded-lg"
+              >
+                <img
+                  src="../capacities-logo.webp"
+                  alt="capacities-logo"
+                  class="w-7 h-7"
+                />
+              </div>
+              <div class="pl-4 min-w-0 flex-1">
+                <h2
+                  class="text-sm font-semibold font-inter truncate sm:text-base"
+                >
+                  Best Second Brain Apps
+                </h2>
+                <h3
+                  class="text-xs mt-0.5 font-normal text-[#11182799] font-inter truncate sm:text-sm"
+                >
+                  A list of the best second brain apps for note taking,
+                  including tools like Notion and Evernote. Find the best second
+                  brain note taking app and pair it up to your way of
+                  note-taking and the powerful Second Brain ideology.
+                </h3>
+              </div>
+              <div></div>
+            </div>
+            <!-- 14 -->
+            <div
+              class="border border-gray-200 flex items-center p-3 rounded-lg"
+            >
+              <div
+                class="h-10 w-10 sm:h-12 sm:w-12 flex justify-center items-center border border-[#e3e3e8] rounded-lg"
+              >
+                <img
+                  src="../fantastical-logo.webp"
+                  alt="fantastical-logo"
+                  class="w-7 h-7"
+                />
+              </div>
+              <div class="pl-4 min-w-0 flex-1">
+                <h2
+                  class="text-sm font-semibold font-inter truncate sm:text-base"
+                >
+                  Free Calendar Apps
+                </h2>
+                <h3
+                  class="text-xs mt-0.5 font-normal text-[#11182799] font-inter truncate sm:text-sm"
+                >
+                  Looking to save some money on calendar apps? Look no further,
+                  we've shortlisted the best calendar apps with good free
+                  pricing plans allowing you to get started organizing yourself
+                  for no cost. Enjoy our recommendations.
+                </h3>
+              </div>
+              <div></div>
+            </div>
+            <!-- 15 -->
+            <div
+              class="border border-gray-200 flex items-center p-3 rounded-lg"
+            >
+              <div
+                class="h-10 w-10 sm:h-12 sm:w-12 flex justify-center items-center border border-[#e3e3e8] rounded-lg"
+              >
+                <img src="../box.webp" alt="box" class="w-7 h-7" />
+              </div>
+              <div class="pl-4 min-w-0 flex-1">
+                <h2
+                  class="text-sm font-semibold font-inter truncate sm:text-base"
+                >
+                  Show More
+                </h2>
+                <h3
+                  class="text-xs mt-0.5 font-normal text-[#11182799] font-inter truncate sm:text-sm"
+                >
+                  View all our lists
+                </h3>
+              </div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+
+    <footer class="border-t-[1px] border-gray-200 mt-10">
+      <div
+        class="xl:grid xl:grid-cols-[1.2fr_2fr] xl:gap-0 py-12 px-6 md:px-14 xl:px-10 2xl:px-28"
+      >
+        <div class="space-y-8">
+          <img
+            src="../tool-finder-footer-logo.webp"
+            alt="logo"
+            width="133"
+            height="64"
+          />
+          <p
+            class="text-base font-inter text-[#374151] font-normal leading-6 xl:w-80 xl:font-light"
+          >
+            Our mission is to help you find the perfect productivity tools to
+            use in your personal and professional lives. With over 12 years
+            experience, and updated reviews, lists &amp; insights to help you
+            find tools.
+          </p>
+          <p
+            class="text-sm font-inter text-[#374151] font-normal xl:font-light"
+          >
+            © 2025 Tool Finder. All rights reserved.
+          </p>
+          <div class="flex space-x-6">
+            <svg
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              class="h-6 w-6"
+              aria-hidden="true"
+            >
+              <path
+                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+              ></path>
+            </svg>
+            <svg
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              class="h-6 w-6"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-8 mt-16 xl:mt-0 md:grid-cols-4">
+          <div>
+            <h3 class="text-sm font-semibold font-inter">COMPANY</h3>
+            <ul
+              class="mt-6 space-y-4 text-base font-inter text-[#374151] xl:font-light"
+            >
+              <li>About</li>
+              <li>Contact</li>
+              <li>Terms of Use</li>
+              <li>Privacy Policy</li>
+              <li>Sitemap</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-sm font-semibold font-inter">RESOURCES</h3>
+            <ul
+              class="mt-6 space-y-4 text-base font-inter text-[#374151] xl:font-light"
+            >
+              <li>Browse Tools</li>
+              <li>Browse Integrations</li>
+              <li>Browse Categories</li>
+              <li>Browse Lists</li>
+              <li>Browse Alternatives</li>
+              <li>Second Brain Productivity</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-sm font-semibold font-inter">TOP READS</h3>
+            <ul
+              class="mt-6 space-y-4 text-base font-inter text-[#374151] xl:font-light"
+            >
+              <li>Best To-Do Apps</li>
+              <li>Best Note Apps</li>
+              <li>Best Calender Apps</li>
+              <li>Best Planner Apps</li>
+              <li>Best for Projects</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-sm font-semibold font-inter">TOP TOOLS</h3>
+            <ul
+              class="mt-6 space-y-4 text-base font-inter text-[#374151] xl:font-light"
+            >
+              <li>Motion</li>
+              <li>Superhuman</li>
+              <li>RemNote</li>
+              <li>Sunsama</li>
+              <li>Things 3</li>
+              <li>Obsidian</li>
+              <li>AkiFlow</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
